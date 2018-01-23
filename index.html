@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- FAV AND TOUCH ICONS   -->
-    <link rel="icon" href="images/favicon.ico">
+    <!-- <link rel="icon" href="images/favicon.ico"> -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -25,6 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600' rel='stylesheet' type='text/css'>
 
     <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- Image Slider -->
@@ -51,36 +52,46 @@
     <!-- Start: Navbar Area
         ============================= -->
     <header id="header" class="okayNav-header navbar-fixed-top main-navbar-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-9">
 
-                    <a class="okayNav-header__logo navbar-brand" href="#">
-                        <img src="images/logo.png" alt="" class="logo-1 img-responsive">
-                        <img src="images/logo-dark.png" alt="" class="logo-2 img-responsive">
+                    <a class="okayNav-header__logo navbar-brand" href>
+                        <img src="images/logo/logo.png" alt="" class="logo-1 img-responsive center-block">
+                        <img src="images/logo/logo-dark.png" alt="" class="logo-2 img-responsive center-block">
                     </a>
+
+                    <style>
+                        .main-navbar-top.navbar-home .navbar-brand .logo-2,
+                        .logo-1 {
+                            height: 75%!important;
+                        }
+                    </style>
 
                 </div>
                 <!-- End: .col-xs-3 -->
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+                <div class="col-lg-9 col-md-8 col-sm-6 col-xs-3">
 
                     <nav role="navigation" class="okayNav pull-right" id="js-navbar-menu">
                         <ul id="navbar-nav" class="navbar-nav">
                             <li>
-                                <a class="btn-nav" href="#features">Features</a>
+                                <a class="btn-nav" href="#home">Inicio</a>
                             </li>
                             <li>
-                                <a class="btn-nav" href="#work">How it works</a>
+                                <a class="btn-nav" href="#features">características</a>
                             </li>
                             <li>
-                                <a class="btn-nav" href="#testimnial">Technology</a>
+                                <a class="btn-nav" href="#howitworks">Como funciona</a>
                             </li>
                             <li>
-                                <a class="btn-nav" href="#pricing">Team</a>
+                                <a class="btn-nav" href="#technology">Tecnología</a>
                             </li>
                             <li>
-                                <a class="btn-nav" href="#contact">contact</a>
+                                <a class="btn-nav" href="#team">Equipo</a>
+                            </li>
+                            <li>
+                                <a class="btn-nav" href="#contact">Contacto</a>
                             </li>
                         </ul>
                     </nav>
@@ -101,14 +112,14 @@
     <!-- Start: Header Section
         ================================ -->
     <section class="header-section-1 bg-image-1 header-js" id="header">
-        <div class="overlay-color">
-            <div class="container">
-                <div class="row section-separator">
+        <!-- <div class="overlay-color"> -->
+        <div class="container" id="home">
+            <div class="row section-separator">
 
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <!-- <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <div class="part-inner text-center">
 
-                            <!--  Header SubTitle Goes here -->
+                            
                             <h1 class="title">Welcome to Im Startup Launch Your Product Now</h1>
 
                             <div class="detail">
@@ -116,7 +127,7 @@
                                     ut laoreet dolore magna aliquam erat volutpat.</p>
                             </div>
 
-                            <!-- Button Area -->
+                            
                             <div class="btn-form btn-scroll">
                                 <a href="#pricing" class="btn btn-fill right-icon">Get Started
                                     <i class="icon icons8-advance"></i>
@@ -124,14 +135,14 @@
                             </div>
 
                         </div>
-                    </div>
-                    <!-- End: .part-1 -->
+                    </div> -->
+                <!-- End: .part-1 -->
 
-                </div>
-                <!-- End: .row -->
             </div>
-            <!-- End: .container -->
+            <!-- End: .row -->
         </div>
+        <!-- End: .container -->
+        <!-- </div> -->
         <!-- End: .overlay-color -->
     </section>
     <!-- End: Header Section
@@ -145,21 +156,26 @@
     <section class="features-section-7 content-half background-light">
 
         <div class="container-half container-half-left background-light"></div>
-        <div class="container-half container-half-right cover" style="background-image: url(images/background-4.jpg);"></div>
+        <div class="container-half container-half-right cover" style="background-image: url(images/background-6.jpg);"></div>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row section-separator text-left">
 
                 <div class="col-md-6">
                     <div class="inner">
 
-                        <h2 class="section-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam notincidunt.</h2>
+                        <h2 class="section-heading">Vivimos en el mundo en el que compramos</h2>
                         <div class="detail">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p>Todos los días compramos productos que impactan en nuestro planeta. Las cadenas de suministro
+                                opacas son entornos devastadores y comprometen el bienestar de las personas, los animales
+                                y las comunidades. Cada producto y negocio es diferente, pero rara vez tenemos la información
+                                que necesitamos para tomar decisiones positivas sobre qué comprar.
+                            </p>
 
-                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in he.</p>
+                            <p>Trazable es una plataforma que permite a las marcas dar pasos hacia una mayor transparencia al
+                                rastrear los orígenes y las historias de los productos. Con nuestra tecnología, puede recopilar
+                                y verificar historias fácilmente, mantenerlas conectadas a las cosas físicas e insertarlas
+                                en cualquier lugar en línea.</p>
                         </div>
 
                     </div>
@@ -179,13 +195,24 @@
     <!-- Start: Features Section 1
         ====================================== -->
     <section class="features-section-1 relative background-semi-dark" id="features">
-        <div id="particles-js">
+        <!-- <div id="particles-js"></div> -->
         <div class="container">
-            <style>
+            <!-- <style>
                 #features {
-                    background-color: black;
+                    background-color: #2f3a49;
                 }
-            </style>
+
+                #features .container {
+                    background-color: #00000000;
+                }
+
+                #particles-js canvas {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    /* z-index: -1; */
+                }
+            </style> -->
             <div class="row section-separator">
 
                 <!-- Start: Section Header -->
@@ -300,7 +327,6 @@
             <!-- End: .row -->
         </div>
         <!-- End: .container -->
-    </div>
     </section>
     <!-- End: Features Section 1
         ======================================-->
@@ -311,7 +337,7 @@
 
     <!-- Start: Features Section 2
         ====================================== -->
-    <section class="features-section-2 relative bg-image-2">
+    <section class="features-section-2 relative bg-image-2" id="howitworks">
         <div class="overlay-color">
             <div class="container">
                 <div class="row section-separator light-text">
@@ -327,9 +353,9 @@
                     <!-- Start: Section Header -->
                     <div class="section-header col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 
-                        <h2 class="section-heading">Watch Our Story</h2>
-                        <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat.</p>
+                        <h2 class="section-heading">Mira nuestra historia.</h2>
+                        <p class="sub-heading">Visualizamos un futuro en el que cada producto físico tiene una historia digital, lo que le permite
+                            rastrear y verificar sus orígenes, atributos y propiedades.</p>
 
                     </div>
                     <!-- End: Section Header -->
@@ -347,44 +373,49 @@
 
     <!-- Start: Features Section 8
         ====================================== -->
-    <section class="features-section-8 relative background-light" id="work">
-        <div class="container">
-            <div class="row section-separator">
+    <section class="features-section-8 relative background-light" id="technology">
+        <div class="container-fluid contFluid">
+            <div class="row section-separator" style="margin-right: 0px;margin-left: 0px;">
 
                 <!-- Start: Section Header -->
                 <div class="section-header col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 
-                    <h2 class="section-heading">Our Works</h2>
-                    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat.</p>
+                    <h2 class="section-heading">Nuestro trabajo</h2>
+                    <!-- <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.</p> -->
 
                 </div>
                 <!-- End: Section Header -->
 
                 <div class="clearfix"></div>
 
-                <div class="project-item col-xs-12">
+                <div class="project-item col-xs-12" style="padding-left: 0px;padding-right: 0px;">
 
                     <div class="each-project row">
                         <div class="each-project-inner">
 
-                            <div class="vertical-middle col-md-7 col-sm-6 col-xs-12">
-                                <div class="project-image cover" style="background-image: url(images/project/1.jpg);">
+                            <div class="vertical-middle col-md-6 col-sm-6 col-xs-12">
+                                <div class="project-image cover" style="background-image: url(images/project/blockchain.jpg);">
                                 </div>
                             </div>
                             <div class="vertical-middle col-md-5 col-sm-6 col-xs-12">
                                 <div class="inner p-l-50">
 
-                                    <h2 class="section-heading">iOS Interface for ZEIS Inc.</h2>
+                                    <h2 class="section-heading">Blockchain</h2>
 
                                     <div class="detail">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt
-                                            ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>
+                                            Trazable está construyendo un sistema de trazabilidad para materiales y productos usando un nuevo tipo de sistema de datos
+                                            llamado blockchain. Es un sistema de datos para almacenar información de manera
+                                            segura, intrínsecamente auditable, inmutable y abierto. Estamos trabajando para
+                                            lograr un protocolo de trazabilidad abierto, que cualquiera pueda utilizar para
+                                            rastrear la procedencia de cualquier cosa, desde granos de café hasta rollos
+                                            de tela.</p>
                                     </div>
 
                                     <!-- Button Area -->
                                     <div class="btn-form">
-                                        <a href="#" class="btn btn-fill right-icon">View Case Study
+                                        <a href="#" class="btn btn-fill right-icon">Caso de estudio
                                             <i class="icon icons8-advance"></i>
                                         </a>
                                     </div>
@@ -413,16 +444,17 @@
 
     <!-- Start: Features Section 6
         ================================== -->
-    <section class="features-section-6 relative background-semi-dark">
+    <section class="features-section-6 relative background-semi-dark" id="team">
         <div class="container">
             <div class="row section-separator">
 
                 <!-- Start: Section Header -->
                 <div class="section-header col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 
-                    <h2 class="section-heading">Team</h2>
-                    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat.</p>
+                    <h2 class="section-heading">Nuestro equipo</h2>
+                    <p class="sub-heading">Cada día estamos motivados por la forma en que Trazable permite la transparencia de la cadena de suministro,
+                        lo que permite que el poder se redistribuya equitativamente entre todos los actores de la cadena
+                        de suministro.</p>
 
                 </div>
                 <!-- End: Section Header -->
@@ -435,24 +467,19 @@
                         <div class="each-features col-md-3 col-md-offset-2 col-sm-6 col-xs-12">
                             <div class="inner background-light text-center">
                                 <div class="features-hover">
-                                    <img src="images/our-members/1.jpg" alt="Our Members" class="img-responsive img-circle">
+                                    <img src="images/our-members/2.jpg" alt="Our Members" class="img-responsive img-circle">
                                     <div class="mask img-circle">
                                         <div class="mask-inner">
-                                            <div class="title">Get Connected</div>
-                                            <ul class="nav social-icon">
+                                            <div class="title">Contáctame</div>
+                                            <ul class="nav social-icon-profile">
                                                 <li>
                                                     <a href="#">
-                                                        <i class="icon icons8-facebook"></i>
+                                                        <i class="fa fa-linkedin"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <i class="icon icons8-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="icon icons8-instagram"></i>
+                                                        <i class="fa fa-instagram"></i>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -477,21 +504,16 @@
                                     <img src="images/our-members/2.jpg" alt="Our Members" class="img-responsive img-circle">
                                     <div class="mask img-circle">
                                         <div class="mask-inner">
-                                            <div class="title">Get Connected</div>
-                                            <ul class="nav social-icon">
+                                            <div class="title">Contáctame</div>
+                                            <ul class="nav social-icon-profile">
                                                 <li>
                                                     <a href="#">
-                                                        <i class="icon icons8-facebook"></i>
+                                                        <i class="fa fa-linkedin"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <i class="icon icons8-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="icon icons8-instagram"></i>
+                                                        <i class="fa fa-instagram"></i>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -548,7 +570,7 @@
                                 <div class="item text-center">
 
                                     <div class="image-outer">
-                                        <img src="images/testimonial/1.jpg">
+                                        <img src="images/testimonial/2.jpg">
                                     </div>
 
                                     <p class="name">Ali Sayed, Zendesk Corp</p>
@@ -576,7 +598,7 @@
                                 <div class="item text-center">
 
                                     <div class="image-outer">
-                                        <img src="images/testimonial/3.jpg">
+                                        <img src="images/testimonial/2.jpg">
                                     </div>
 
                                     <p class="name">Ali Sayed, Zendesk Corp</p>
@@ -590,7 +612,7 @@
                                 <div class="item text-center">
 
                                     <div class="image-outer">
-                                        <img src="images/testimonial/4.jpg">
+                                        <img src="images/testimonial/2.jpg">
                                     </div>
 
                                     <p class="name">Ali Sayed, Zendesk Corp</p>
@@ -733,7 +755,7 @@
                         <!-- Start: Section Header -->
                         <div class="section-header col-xs-12">
 
-                            <h2 class="section-heading">Contact Us</h2>
+                            <h2 class="section-heading">Contáctanos</h2>
 
                         </div>
                         <!-- End: Section Header -->
@@ -746,11 +768,11 @@
                                 <div class="inner">
 
                                     <p class="email-loading">
-                                        <img src="images/loading.gif" alt="">&nbsp;&nbsp;&nbsp;Sending...</p>
+                                        <img src="images/loading.gif" alt="">&nbsp;&nbsp;&nbsp;Enviando...</p>
                                     <p class="email-success">
-                                        <i class="icon icon-icon-check-alt2"></i> Your quote has successfully been sent.</p>
+                                        <i class="icon icon-icon-check-alt2"></i> Nos pondremos en contacto lo antes posible!</p>
                                     <p class="email-failed">
-                                        <i class="icon icon-icon-close-alt2"></i> Something went wrong!</p>
+                                        <i class="icon icon-icon-close-alt2"></i> Ops! Algo no ha ido bien...</p>
 
                                 </div>
                                 <!-- End: .inner -->
@@ -759,7 +781,7 @@
 
 
                             <div class="col-sm-6">
-                                <input name="name" class="contact-name form-control" id="contact-name" type="text" placeholder="Name" required="">
+                                <input name="name" class="contact-name form-control" id="contact-name" type="text" placeholder="Nombre" required="">
                             </div>
 
                             <div class="col-sm-6">
@@ -767,16 +789,16 @@
                             </div>
 
                             <div class="col-sm-12">
-                                <input name="name" class="contact-subject form-control" id="contact-subject" type="text" placeholder="Subject" required="">
+                                <input name="name" class="contact-subject form-control" id="contact-subject" type="text" placeholder="Asunto" required="">
                             </div>
 
                             <div class="col-sm-12">
-                                <textarea class="contact-message form-control" id="contact-message" rows="3" placeholder="Message" required=""></textarea>
+                                <textarea class="contact-message form-control" id="contact-message" rows="3" placeholder="Mensaje" required=""></textarea>
                             </div>
 
                             <!-- Subject Button -->
                             <div class="btn-form text-center col-xs-12">
-                                <button class="btn btn-fill right-icon">send message
+                                <button class="btn btn-fill right-icon">Enviar
                                     <i class="icon icons8-advance"></i>
                                 </button>
                             </div>
@@ -802,17 +824,101 @@
         <div class="container">
             <div class="row section-separator text-center">
 
-                <div class="copyright">
-                    <p>Copyright: ThemeOcean 2016. Designed by
-                        <a href="https://templateocean.com">TemplateOcean</p>
-                    <!-- You can keep the link to show us some support :) -->
+                <div class="col-md-12 col-sm-12">
+                    <p>Copyright © Trazable</p>
+                    <hr>
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#" class="fa fa-facebook" data-wow-delay="0.3s"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter" data-wow-delay="0.6s"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-reddit" data-wow-delay="0.8s"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin" data-wow-delay="0.9s"></a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
-            <!-- End: .section-separator  -->
         </div>
-        <!-- End: .container  -->
     </footer>
+
+    <style>
+        /* ==========================================================================
+            footer section
+        ========================================================================== */
+
+        hr {
+            width: 180px;
+            border-color: #CCC;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer p {
+            padding-top: 20px;
+        }
+
+        .social-icon, .social-icon-profile {
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icon li, .social-icon-profile li {
+            list-style: none;
+            display: inline-block;
+            padding: 6px;
+        }
+
+        .social-icon li a {
+            box-shadow: 0px 0px 20px 2px rgba(50, 50, 50, 0.09);
+            color: #808080;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 56px;
+            height: 56px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .social-icon li a:hover {
+            box-shadow: 0px 0px 10px 1px #29B6F6;
+        }
+
+        .social-icon li a:hover {
+            color: #29B6F6;
+        }
+
+        .social-icon-profile li a {
+            color: #fff;
+            border-radius: 100%;
+            font-size: 20px;
+            width: 56px;
+            height: 56px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+            padding: 0px 0px!important;
+        }
+
+        .social-icon-profile li a:hover {
+            box-shadow: 0px 0px 15px 0px #fff;
+            background-color: #3096c9!important;
+        }
+
+        .social-icon-profile li a:hover {
+            color: #fff;
+        }
+    </style>
     <!-- End: Footer Section 1
         ================================== -->
 
@@ -825,12 +931,28 @@
     <script src="js/plagin-js/jquery-1.11.3.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/plagin-js/plagin.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/particles.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
 
     <!-- Custom Script 
         ==========================================-->
     <script src="js/custom-scripts.js"></script>
+
+    <script>
+     $(function() {
+       $('a[href*="#"]:not([href="#"])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html, body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
+     });</script>
 
 </body>
 

@@ -139,6 +139,7 @@ body {
   overflow-x: hidden !important;
   text-align: left;
   position: relative;
+  width: 100vw;
 }
 a {
   text-decoration: none !important;
@@ -159,7 +160,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 a:hover {
-  color: #355dff;
+  color: #29B6F6;
 }
 a:focus {
   outline: 0 !important;
@@ -409,8 +410,8 @@ h6 {
   background-color: #002ee7;
 }
 .btn.btn-fill {
-  background-color: #355dff;
-  border-color: #355dff;
+  background-color: #29B6F6;
+  border-color: #29B6F6;
 }
 .btn.btn-border {
   background-color: transparent;
@@ -431,7 +432,7 @@ h6 {
   text-align: center;
 }
 .btn-text-link a {
-  color: #355dff;
+  color: #29B6F6;
   margin-left: 10px;
 }
 .m-t-30 {
@@ -526,12 +527,12 @@ h6 {
   width: 33px;
   height: 33px;
   padding: 2px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-right: 15px;
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid;
-  border-color: #ffffff;
+  /* border: 2px solid; */
+  /* border-color: #ffffff; */
 }
 .social-icon li a:hover,
 .social-icon li a:focus {
@@ -644,7 +645,7 @@ h6 {
   color: rgba(88, 88, 88, 0.85) !important;
 }
 .single-form .form-control:focus {
-  border-color: #355dff;
+  border-color: #29B6F6;
 }
 .single-form textarea {
   height: 175px !important;
@@ -849,6 +850,7 @@ h6 {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 0px;
+  width: 100%;
 }
 .main-navbar-top .navbar-brand img {
   display: block;
@@ -864,7 +866,7 @@ h6 {
   padding: 19px 15px;
 }
 .main-navbar-top .navbar-toggle .icon-bar {
-  background-color: #355dff;
+  background-color: #29B6F6;
 }
 .main-navbar-top ul li .btn-nav {
   border-radius: 50px 50px 50px 50px ;
@@ -959,10 +961,10 @@ h6 {
   background-color: transparent;
 }
 .main-navbar-top.navbar-home ul li .btn-nav:hover {
-  color: #355dff;
+  color: #29B6F6;
 }
 .main-navbar-top.navbar-home ul li.active .btn-nav {
-  color: #355dff;
+  color: #29B6F6;
 }
 .main-navbar-top.navbar-home .navbar-nav .btn-nav.btn-border {
   border-color: rgba(88, 88, 88, 0.7);
@@ -976,7 +978,7 @@ h6 {
  * ===============================
 */
 .bg-image-1 {
-  background: url('../images/background-1.jpg');
+  background: url('../images/background-5.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1146,7 +1148,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 .features-section-3 .owl-controls .owl-pagination .owl-page.active span {
-  background-color: #355dff;
+  background-color: #29B6F6;
 }
 /**
  * ====================================
@@ -1245,11 +1247,11 @@ h6 {
   -o-box-shadow: 10px 17.321px 57px 0px rgba(0, 0, 0, 0.08) ;
 }
 .pricing-table .each-table .inner:hover .btn-form .btn.normal {
-  border-color: #355dff;
+  border-color: #29B6F6;
 }
 .pricing-table .each-table .inner:hover .btn-form .btn.normal,
 .pricing-table .each-table .inner:hover .btn-form .btn.normal .icon {
-  color: #355dff;
+  color: #29B6F6;
 }
 .pricing-table .each-table .inner:hover .btn-form .btn.normal:hover {
   background-color: #002ee7;
@@ -1347,7 +1349,7 @@ h6 {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(53, 93, 255, 0.85);
+  background-color: #29B6F6c4;
   opacity: 0;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -1431,7 +1433,7 @@ h6 {
   opacity: 1;
 }
 .features-section-6 .each-features .inner:hover .position {
-  color: #355dff;
+  color: #29B6F6;
 }
 /**
  * ====================================
@@ -1445,6 +1447,7 @@ h6 {
 }
 .features-section-7 .inner {
   padding-right: 55px;
+  padding-left: 55px;
 }
 .features-section-7 .detail p {
   font-weight: 400;
@@ -1466,6 +1469,7 @@ h6 {
 .project-item .inner {
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-right: 55px;
 }
 .project-item .section-heading {
   font-size: 35px;
@@ -1494,3 +1498,27 @@ h6 {
   font-size: 15px;
   font-weight: 400;
 }
+
+
+
+
+
+
+
+/**
+ * ====================================
+ *Custom Trazable
+ * ====================================
+ */
+
+ .footer-section {
+   margin-bottom: -25px;
+ }
+
+ .contFluid {
+   padding-left: 0px!important;
+   padding-right: 0px!important;
+ }
+
+
+
